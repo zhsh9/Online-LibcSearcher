@@ -1,3 +1,15 @@
+# Introduction
+
+...
+
+# How to install libcdumper
+
+```bash
+git clone https://github.com/ec1ipse-yes/1ibcDumper.git
+cd 1ibcDumper
+python3 setup.py develop
+```
+
 # How to use libcdumper
 
 ```python
