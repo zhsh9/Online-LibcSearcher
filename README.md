@@ -1,6 +1,6 @@
 # Introduction
 
-...
+... im a little bit lazy ... orz
 
 # How to install libcdumper
 
