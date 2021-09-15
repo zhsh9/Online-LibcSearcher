@@ -4,10 +4,10 @@ import requests
 import json
 
 
-class LibcDumper:
+class OnlineLibcSearcher:
     def __init__(self, leaked_symbol_name: str = None, leaked_symbol_addr: int = None):
         if leaked_symbol_name is None or leaked_symbol_addr is None:
-            print(f"[X] Please use LibcDumper based on information of leaked function.")
+            print(f"[X] Please use OnlineLibcSearcher based on information of leaked function.")
         else:
             self.leaked_symbol_name = leaked_symbol_name
             self.leaked_symbol_addr = leaked_symbol_addr
@@ -70,9 +70,9 @@ class LibcDumper:
 
 
 if __name__ == "__main__":
-    # Example: how to use LibcDumper
+    # Example: how to use OnlineLibcSearcher
     setbuf_addr = 0x7F6555FAD540
-    dp = LibcDumper("setbuf", setbuf_addr)
+    dp = OnlineLibcSearcher("setbuf", setbuf_addr)
 
     print(f"[*] __libc_start_main_ret --> {hex(dp.dump('__libc_start_main_ret'))}")
     print(f"[*] dup2 --> {hex(dp.dump('dup2'))}")
