@@ -2,22 +2,22 @@
 
 orz
 
-# How to install libcdumper
+# How to install Online-LibcSearcher
 
 ```bash
 git clone https://github.com/ec1ipse-yes/1ibcDumper.git
-cd 1ibcDumper
+cd Online-LibcSearcher
 python3 setup.py develop
 ```
 
-# How to use libcdumper
+# How to use Online-LibcSearcher
 
 ```python
-from libcdumper import *
+from libcsearcher import *
 
-dp = LibcDumper("setbuf", 0x7F6555FAD540)
-dp.add_symbol_info("puts", 0x7F6555FA5A30)
+ls = LibcSearcher("setbuf", 0x7F6555FAD540)
+ls.add_symbol_info("puts", 0x7F6555FA5A30)
 
-print(f"[*] str_bin_sh --> {hex(dp.dump('str_bin_sh'))}")
-print(f"[*] system --> {hex(dp.dump('system'))}")
+print(f"[*] str_bin_sh --> {hex(ls.dump('str_bin_sh'))}")
+print(f"[*] system --> {hex(ls.dump('system'))}")
 ```
