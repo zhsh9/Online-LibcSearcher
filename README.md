@@ -1,11 +1,11 @@
 # Introduction
 
-orz
+This tool is the online version of LibcSearcher, due to the fact that the older LibcSearcher's Libc library has not been updated for a while and causes some issues. Besides, it is based on the online libcseachers website to gain the proper result.
 
 # How to install Online-LibcSearcher
 
 ```bash
-git clone https://github.com/ec1ipse-yes/1ibcDumper.git
+git clone https://github.com/eclipse-yes/Online-LibcSearcher.git
 cd Online-LibcSearcher
 python3 setup.py develop
 ```
